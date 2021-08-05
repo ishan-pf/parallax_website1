@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <Link rel="stylesheet" href="style.css">
+    <title>The MoonLight</title>
+</head>
+<body>
+    <header>
+        <a href="#" class="logo" >Welcome</a>
+
+        <ul>
+            <li><a href="#" class="active">Home</a> </li>
+            <li><a href="#">About </a> </li>
+            <li><a href="#">Contact </a> </li>
+            <li><a href="#">Projects</a> </li>
+        </ul>
+    </header>
+
+    <section>
+        <img src="stars.png" alt="stars" id="stars">
+        <img src="moon.png" alt="moon" id="moon">
+        <img src="mountains_behind.png" alt="mount_behind" id="mount_behind">
+        <h2 id="text">Ishan Gupta</h2>
+        <a href="#sec" id="btn">Explore</a>
+        <img src="mountains_front.png" alt="mount_front" id="mount_front">
+        
+    </section>
+
+    <div class='sec' id="sec">
+        <h2>Summary</h2>
+        <p> ☛ Hey There ! My Name is Ishan Gupta And I m one of those who like to do things in a different & Unqiue Manner. I m passionate about learning new things daily and work hard on building my interest & SkillSet. I currently learning about Full Stack Development & Competitive Programming. In future, I want to work in a FAANG Company and after gaining experience I would like to start my startup & Business Because i believe in minding my own business and working on achieving my goals. <br><br> ☛I love pets and I m Fitness enthusiastic. I worked 6 days a week and would to spread awareness about health to about people who dont take health seriously.
+        <br><br>  ☛ Currently i m pursing my btech from manipal university jaipur , studying FSD under ShapeAI & Learning CP in Unacademy where the mentors are themselves achievers.  </p>
+        <br><br> ☛<br>
+        <p> ☛ Hey There ! My Name is Ishan Gupta And I m one of those who like to do things in a different & Unqiue Manner. I m passionate about learning new things daily and work hard on building my interest & SkillSet. I currently learning about Full Stack Development & Competitive Programming. In future, I want to work in a FAANG Company and after gaining experience I would like to start my startup & Business Because i believe in minding my own business and working on achieving my goals. <br><br> ☛ I love pets and I m Fitness enthusiastic. I worked 6 days a week and would to spread awareness about health to about people who dont take health seriously.
+        <br><br> ☛ Currently i m pursing my btech from manipal university jaipur , studying FSD under ShapeAI & Learning CP in Unacademy where the mentors are themselves achievers. </p>
+        
+    </div>
+
+    <script>
+
+        let stars = document.querySelector("#stars");
+        let moon  = document.querySelector("#moon");
+        let text = document.querySelector("#text");
+        let  mount_behind = document.querySelector("#mount_behind");
+        let btn = document.querySelector("#btn");
+        let mount_front = document.querySelector("#mount_front");
+        let header = document.querySelector("header");
+        window.addEventListener('scroll', function(){
+            let value = window.scrollY;
+            stars.style.left = value * 0.25 + 'px';
+            moon.style.top = value * 1.05 + 'px' ;
+            mount_behind.style.top = value * 0.5 + 'px' ;
+            mount_front.style.top = value * 0 + 'px';
+            text.style.marginRight = value * 4 + 'px';
+            text.style.marginTop = value * 1.5 + 'px';
+            btn.style.marginTop = value * 1.5 + 'px';
+            header.style.top = value * 0.5 + 'px';
+        })
+        
+    </script>
+</body>
+</html>
